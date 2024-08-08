@@ -1,4 +1,5 @@
 
+
 int motor_d_velocidade = 9;
 int motor_d_in1 = 3;
 int motor_d_in2 = 4;
@@ -61,8 +62,13 @@ void loop()
   int ideal_m = 100;
   int ideal_d = 100;
   int ideal_c = 100;
-  
-  Serial.println(valor_e);
+
+  Serial.print("Sensor E: ");
+  Serial.print(valor_e);
+  Serial.print(" Sensor M: ");
+  Serial.print(valor_m);
+  Serial.print(" Sensor D: ");
+  Serial.println(valor_d);
   
   //Movimentação
 //  if((sensor_e > ideal_e && sensor_m > ideal_m && sensor_d > ideal_d) || (sensor_e < ideal_e && sensor_m > ideal_m && sensor_d < ideal_d))
